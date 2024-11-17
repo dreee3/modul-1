@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Scope vs Local Scope</title>
+  </head>
+  <body>
+    <h1>Demonstrasi Global Scope dan Local Scope</h1>
+    <p>Cek console untuk hasilnya!</p>
+
+    <script>
+      // Variabel dengan global scope
+      let globalVar = "Saya variabel global";
+
+      function contohScope() {
+        // Variabel dengan local scope (hanya bisa diakses dalam fungsi ini)
+        let localVar = "Saya variabel lokal";
+
+        // Di dalam fungsi, kita bisa mengakses kedua variabel
+        console.log("Di dalam fungsi:");
+        console.log(globalVar); // Output: Saya variabel global
+        console.log(localVar); // Output: Saya variabel lokal
+      }
+
+      // Memanggil fungsi contohScope
+      contohScope();
+
+      // Mencoba mengakses variabel lokal di luar fungsi
+      console.log("\nDi luar fungsi:");
+      console.log(globalVar); // Output: Saya variabel global
+      console.log(localVar); // Error: localVar is not defined
+    </script>
+  </body>
+</html>

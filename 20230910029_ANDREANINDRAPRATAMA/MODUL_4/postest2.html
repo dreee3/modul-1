@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fungsi Kuadrat</title>
+  </head>
+  <body>
+    <h1>Menghitung Kuadrat Bilangan</h1>
+    <p>Hasil kuadrat dari angka 7 akan ditampilkan di bawah ini:</p>
+    <p id="hasil"></p>
+
+    <script>
+      // Fungsi untuk menghitung kuadrat
+      function kuadrat(angka) {
+        return angka * angka; // Mengembalikan hasil kuadrat
+      }
+
+      // Menghitung kuadrat dari angka 7
+      let angka = 7;
+      let hasilKuadrat = kuadrat(angka);
+
+      // Menampilkan hasil di elemen HTML
+      document.getElementById("hasil").textContent =
+        "Kuadrat dari " + angka + " adalah: " + hasilKuadrat;
+    </script>
+  </body>
+</html>

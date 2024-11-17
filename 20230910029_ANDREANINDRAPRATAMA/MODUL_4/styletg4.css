@@ -1,0 +1,87 @@
+body {
+  background-image: url("/20230910029_ANDREANINDRAPRATAMA/MODUL_4/foto/uniku.jpeg");
+  background-size: cover; /* Agar background memenuhi seluruh halaman */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Background tetap saat scroll */
+  background-position: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.85); /* Overlay putih transparan */
+  z-index: -1; /* Overlay di belakang konten */
+}
+.container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Latar belakang transparan */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.text {
+  margin-left: 20px;
+  color: #0056b3;
+}
+.text h1 {
+  font-size: 2em;
+  margin: 0;
+}
+.text h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+.text p {
+  font-size: 1em;
+  margin: 0;
+}
+img {
+  width: 100px;
+  height: auto;
+}
+.profile {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.profile h1 {
+  color: #333;
+}
+.profile ul,
+.profile ol {
+  padding-left: 20px;
+}
+.profile:hover {
+  background-color: #fffc51d9;
+  transition: background-color 0.3s;
+}
+.hidden {
+  display: none;
+  input[type="text"] {
+    position: absolute; /* Agar kotak pencarian dapat diposisikan bebas */
+    top: 20px; /* Jarak dari atas */
+    right: 20px; /* Jarak dari kanan */
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  body {
+    position: relative; /* Agar elemen dengan posisi absolute terhubung ke body */
+  }
+}
